@@ -1,0 +1,1 @@
+const String IconAssets="assets/icons_Assets";
