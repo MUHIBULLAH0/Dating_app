@@ -8,3 +8,12 @@ const LinearGradient pinkGradient = LinearGradient(
   begin: Alignment.topRight,
   end: Alignment.bottomLeft,
 );
+const LinearGradient backGroundGradient=LinearGradient(colors: [
+Color(0xFFFFFFFF), // Hot Pink
+Color(0xFF97ECFF),
+Color(0xFFFFF7CA), 
+Color(0xFFFFFFFF)// Light Pink
+],
+begin: Alignment.topCenter,
+end: Alignment.bottomCenter,
+);
