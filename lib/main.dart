@@ -1,4 +1,6 @@
+import 'package:dating_app/ui/intro/intro.dart';
 import 'package:dating_app/ui/loading/loading.dart';
+import 'package:dating_app/ui/login/login.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -19,7 +21,7 @@ class DatingApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.pink,
         ),
-        home:  Loading(), 
+        home:  Login(), 
       ),
     );
   }

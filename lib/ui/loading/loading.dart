@@ -22,16 +22,19 @@ class _LoadingState extends State<Loading> {
   }
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        height: 1.sh,
-        width: 1.sw,
-        decoration: BoxDecoration(
-          gradient: pinkGradient
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Container(
+          height: 1.sh,
+          width: 1.sw,
+          decoration: BoxDecoration(
+            gradient: pinkGradient
+          ),
+          child: Center(
+            child: Image.asset("assets/icons_Assets/1.png"),
+          ),
+          
         ),
-        child: Center(
-          child: Image.asset("assets/icons_Assets/1.png"),
-        ),
-        
       ),
     );  
   }
