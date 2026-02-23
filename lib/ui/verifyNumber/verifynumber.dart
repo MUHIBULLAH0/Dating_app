@@ -1,5 +1,6 @@
 import 'package:dating_app/core/constant/colors.dart';
 import 'package:dating_app/core/constant/text.dart';
+import 'package:dating_app/ui/personaldetail/personaldetail.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -42,8 +43,21 @@ class VerifyScreen extends StatelessWidget {
                 SizedBox(width: 12),
                 OtpInput(),
   ],
-)
-
+),
+    
+    Padding(
+      padding: const EdgeInsets.only(top: 25),
+      child: Center(child: mybutton(text: "Submit", onTap: (){
+        Navigator.push(context, MaterialPageRoute(builder: (context)=>Personaldetail()));
+      })),
+    ), ShaderMask( 
+  shaderCallback: (bounds)=>  LinearGradient( colors: [
+  Color(0xFFFF457E), 
+    Color(0xFF7B49FF),   ]).createShader(bounds),
+  child: Center(child: Padding(
+    padding: const EdgeInsets.only(top: 20),
+    child: Text("Resend Code",style: Resend,),
+  )),)
 
 
           ],
@@ -54,35 +68,11 @@ class VerifyScreen extends StatelessWidget {
 }
 
 
-class OtpInput extends StatelessWidget {
-  const OtpInput({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 62.w,
-      height: 60.h,
-      alignment: Alignment.center,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        border: Border.all(
-          color: const Color(0xffC53E8D),
-          width: 2,
-        ),
-      ),
-      child: TextField(
-        keyboardType: TextInputType.number,
-        textAlign: TextAlign.center,
-        maxLength: 1, 
-        decoration: const InputDecoration(
-          counterText: "",
-          border: InputBorder.none,
-        ),
-        style: const TextStyle(
-          fontSize: 20,
-          fontWeight: FontWeight.bold,
-        ),
-      ),
-    );
-  }
-}
+
+
+
+
+
+
+

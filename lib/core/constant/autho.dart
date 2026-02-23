@@ -13,7 +13,7 @@ final authodecoration = InputDecoration(
   ),
   
   hintText: "Phone Number",
- 
+
 );
 
 

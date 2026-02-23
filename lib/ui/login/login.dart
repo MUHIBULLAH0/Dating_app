@@ -31,6 +31,7 @@ class Login extends StatelessWidget {
               child: TextField(
                 keyboardType: TextInputType.number,
                 decoration: authodecoration,
+                
               ),
             ),
             mybutton(text: "Submit", onTap: (){
